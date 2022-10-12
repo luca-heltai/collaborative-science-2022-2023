@@ -101,7 +101,7 @@ Remember to set a second remote, either to our seed
 
 or (if using ssh keys in your github account)
 
-	git remote add P1.4_seed git@github.com:luca-heltai/collaborative-science-2022-2023.git
+	git remote add teacher git@github.com:luca-heltai/collaborative-science-2022-2023.git
 
 and to update before the lectures:
 
