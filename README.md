@@ -6,7 +6,12 @@
 
 - Luca Heltai (<luca.heltai@sissa.it>)
 
-All lectures are live in Room A-133.
+All lectures are live in Room A-133, and on zoom on 
+
+https://sissa-it.zoom.us/j/81471012769?pwd=QnNiZnVtbUxvNENybXlPNWVsT1hmQT09
+
+Meeting ID: 814 7101 2769
+Passcode: GitRules
 
 The official course page, with the schedule and up-to-date information is 
 
