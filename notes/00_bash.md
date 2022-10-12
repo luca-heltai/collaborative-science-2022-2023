@@ -19,11 +19,9 @@ Permissions can be changed with `chmod` which works on the binary number so `chm
 
 `cd ..` to get up one level (`cd ../../../../..` for many levels)
 
-Just cd gets you to `/home/USER`.
+Just `cd` gets you to `/home/USER`.
 
 `cd -` gets you to a previous location, this is especially useful if you accidentally pressed enter after typing `cd`.
-
-`tree` to see the structure
 
 `touch FILENAME` to create a file
 
@@ -35,8 +33,7 @@ Just cd gets you to `/home/USER`.
 
 `mv` to move a file to a different directory or rename
 
-
-`find . -name "*.txt"` to search for all .txt file in a directory 
+`find . -name "*.txt"` to search for all `.txt` file in a directory 
 
 `grep` to find text in a file:
 
@@ -96,7 +93,7 @@ $ history|grep "cd"
 
 ### .bashrc and some fun
 
-At login `~/.bashrc` is executed. You can edit it for things you want to change permanently, for example to set aliases:
+At login `~/.bashrc` or `~/.zshrc` are executed (depending or your shell type). You can edit it for things you want to change permanently, for example to set aliases:
 
 `alias pg='ping google.com'` 
 
@@ -110,4 +107,4 @@ alias meow='oneko -bg green'
 
 you can get the following colorful ping output and a little cat chasing your cursor:
 
-![](pictures/screenshot.png)
+![](../pictures/screenshot.png)
