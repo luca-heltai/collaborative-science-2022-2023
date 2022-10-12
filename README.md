@@ -97,15 +97,15 @@ New material will be uploaded frequently,
 
 Remember to set a second remote, either to our seed
 
-	git remote add teacher https://github.com/luca-heltai/numerical-analysis-2021-2022.git
+	git remote add teacher https://github.com/luca-heltai/collaborative-science-2022-2023.git
 
 or (if using ssh keys in your github account)
 
-	git remote add P1.4_seed git@github.com:luca-heltai/numerical-analysis-2020-2021.git
+	git remote add P1.4_seed git@github.com:luca-heltai/collaborative-science-2022-2023.git
 
 and to update before the lectures:
 
-	git pull P1.4_seed master
+	git pull teacher main
 
 **Please consider contributing pull requests to correct typos, or better document the material in this repository!**
 
