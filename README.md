@@ -46,7 +46,7 @@ In this short course I'll discuss modern tools used to automate the above proces
    1. Introduction to Linux/Unix and bash
    2. bash scripting
 
-2. Verion control systems
+2. Version control systems
    
    1. An historical overview (RCS -> CVS -> SVN -> GIT)
    2. Using GIT for single user projects
