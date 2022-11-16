@@ -17,4 +17,4 @@ jobs:
           ls ${{ github.workspace }}
       - run: echo "🍏 This job's status is ${{ job.status }}."
       - name: Check that we have at our disposal files to test
-      - run: test -f doker/gabelli/Dockerfile && echo "Dockerfile exists"
+        run: test -f doker/gabelli/Dockerfile && echo "Dockerfile exists"
