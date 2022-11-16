@@ -1,0 +1,16 @@
+name: Actions on fcaretti
+on: [push]
+jobs:
+  test-docker-image:
+    runs-on: ubuntu-latest
+    container: ghcr.io/fcaretti/ml_image
+
+    steps:
+     - name: Check out repository
+       uses: actions/checkout@v3
+     - name: Check that we have vim installed
+       run: test -f /bin/vim && echo "Vim is installed"
+     - name: Run tests in tests/heltai directory
+       run: |
+          cd tests/fcaretti
+          python3 short_test.py
