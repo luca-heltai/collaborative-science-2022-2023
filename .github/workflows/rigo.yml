@@ -8,9 +8,19 @@ jobs:
     steps:
      - name: Checkout the repo
        uses: actions/checkout@v3
-     - name: Check that we have vim installed
-       run: test -f /bin/vim && echo "Vim is installed"
-     - name: Run tests in tests/heltai directory
+     - name: Test for vim
+       run: test -f /bin/vim && echo "Vim is installed."
+     - name: Test for python
+       run: python3 --version
+     - name: Test for numpy
+       run: python3 -c "import numpy" && echo "numpy is installed."
+     - name: Test for jax
+       run: python3 -c "import jax" && echo "jax is installed."
+     - name: Run short test in tests/rigo directory
        run: |
           cd tests/rigo
           python3 test.py
+     - name: Run long test in tests/rigo directory
+       run: |
+          cd tests/rigo
+          python3 MCtest.py
