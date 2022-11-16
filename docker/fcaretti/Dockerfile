@@ -1,6 +1,8 @@
 FROM ubuntu:focal
 
-RUN apt-get update  && apt-get install -y vim wget  python3-pip
+RUN apt-get update  && apt-get install -y vim wget  python3-pip && \
+    apt-get clean && \
+    rm -rf /var/lib/apt/lists/*
     
 
 ENV CONDA_DIR /opt/conda
