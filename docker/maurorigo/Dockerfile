@@ -12,7 +12,4 @@ RUN chmod +x /usr/local/bin/start.sh
 
 WORKDIR /home
 
-# No need to do this, could also do as the starting script, but just for testing this feature
-COPY test.py test.py
-
 ENTRYPOINT /usr/local/bin/start.sh && /bin/bash
