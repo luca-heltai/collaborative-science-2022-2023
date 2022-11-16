@@ -3,8 +3,8 @@ on: [push]
 jobs:
   test-docker-image:
     runs-on: ubuntu-latest
-    image: heltai/example-image
-    
+    container: heltai/example-image
+
     steps:
      - name: Check out repository
        uses: actions/checkout@v3
