@@ -10,3 +10,7 @@ jobs:
        uses: actions/checkout@v3
      - name: Check that we have vim installed
        run: test -f /bin/vim && echo "Vim is installed"
+     - name: Run tests in tests/heltai directory
+       run: |
+          cd tests/heltai
+          pytest
