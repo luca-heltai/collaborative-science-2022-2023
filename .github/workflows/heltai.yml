@@ -1,7 +1,7 @@
 name: Actions on Heltai
 on: [push]
 jobs:
-  Run things in directory heltai:
+  Run-on-heltai:
     runs-on: ubuntu-latest
     steps:
       - name: Check that we have at our disposal files to test
