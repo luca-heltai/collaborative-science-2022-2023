@@ -11,7 +11,7 @@ jobs:
      - name: Check that we have vim installed
        run: test -f /bin/vim && echo "Vim is installed"
      - name: Check that numpy is install
-       run: python3 -c "import numpy" && echo "Numpy was import successfully"
+       run: python3 -c "import numpy" && echo "Numpy was import successfully :)"
      -name: Check if matplotlib work
        run: python3 -c "import matplotlib.pyplot" &&  echo "Matplotlib was import successfully" 
      - name: Run tests in tests/gibbs directory
