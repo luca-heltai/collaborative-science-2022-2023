@@ -1,17 +1,16 @@
 #FROM ubuntu:latest
-FROM python:3.10
+FROM ubuntu:focal
 
+RUN apt-get update \
+    && apt-get install -y vim \
+    && apt-get install -y python3 \
+    && apt-get install -y python3-pip \
+    && pip install numpy \
+    && pip install matplotlib
+RUN echo 'echo "This image runs Ubuntu and has vim, python, pip, numpy and matplotlib installed."' > /usr/local/bin/start.sh
+RUN echo 'echo "For a simple test, run \"python3 main.py\"."' >> /usr/local/bin/start.sh
+RUN chmod +x /usr/local/bin/start.sh
 
+WORKDIR /home
 
-
-WORKDIR /root
-RUN mkdir gibbs_project
-
-
-ADD EpsiGreedyMultiArme.py  FairnessTrial.py  FourthPhase.py  InitializationAndFirstPhase.py main.py  SecondPhasetrial.py ThirdPhase.py /root/gibbs_project/
-
-RUN apt-get update
-RUN pip install --upgrade pip
-RUN pip install numpy matplotlib 
-
-CMD ["python", "./gibbs_project/main.py"]
+ENTRYPOINT /usr/local/bin/start.sh && /bin/bash
