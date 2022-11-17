@@ -12,4 +12,6 @@ RUN chmod +x /usr/local/bin/start.sh
 
 WORKDIR /home
 
+COPY test.py test.py
+
 ENTRYPOINT /usr/local/bin/start.sh && /bin/bash
