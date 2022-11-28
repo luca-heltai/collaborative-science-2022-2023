@@ -15,4 +15,5 @@ RUN conda install -y -c conda-forge pyomo && \
 	conda install -y -c conda-forge glpk && \
 	conda install -y numpy && \
 	conda install pandas && \
-    conda install -c anaconda pytest
+    conda install -y -c anaconda pytest && \
+    conda activate base
