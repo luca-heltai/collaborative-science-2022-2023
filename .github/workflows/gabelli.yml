@@ -13,4 +13,4 @@ jobs:
      - name: Run tests in tests/gabelli directory
        run: |
           cd tests/gabelli
-          pytest
+          python -m pytest
