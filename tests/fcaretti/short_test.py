@@ -39,7 +39,7 @@ epochs = 3
 for t in range(epochs):
     print(f"Epoch {t+1}\n-------------------------------")
     losses.append(train(train_dataloader, model, loss_fn, optimizer,device))
-    
+
 if losses[-1]<=losses[0]:
     print('Test passed: training loss is decreasing')
 else:
