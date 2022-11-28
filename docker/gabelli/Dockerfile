@@ -12,4 +12,5 @@ RUN wget https://repo.anaconda.com/archive/Anaconda3-2022.10-Linux-x86_64.sh && 
 RUN conda install -y -c conda-forge pyomo && \
 	conda install -y -c conda-forge glpk && \
 	conda install -y numpy && \
-	conda install pandas
+	conda install pandas && \
+    conda install -y -c anaconda pytest
