@@ -14,4 +14,5 @@ ENV PATH=$CONDA_DIR/bin:$PATH
 RUN conda install -y -c conda-forge pyomo && \
 	conda install -y -c conda-forge glpk && \
 	conda install -y numpy && \
-	conda install pandas
+	conda install pandas && \
+    conda install -c anaconda pytest
