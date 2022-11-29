@@ -331,8 +331,10 @@ print("MC states initialized. Performing MC walk...")
 twlk_i = time.time()
 
 key, acc, ni_stored = metropolis.walk(key, params, ni_o)
-if ni_stored.shape == (nav, nwalk, nstates):
+ni_stored.block_until_ready()
+if ni_stored.shape[0] == nav+nac and ni_stored.shape[1] == nwalk and ni_stored.shape[2] == nstates:
     print("Stored states matrix has the right dimension.")
+    print(f"{ni_stored.shape[0]}, {ni_stored.shape[1]}, {ni_stored.shape[2]} vs {nav}, {nac}, {nwalk}, {nstates}")
 else:
     raise Exception("Stored states matrix doesn't have the right dimension.")
 
