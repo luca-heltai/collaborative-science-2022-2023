@@ -1,0 +1,22 @@
+name: Actions on FrancescoSlongo
+on: [push]
+jobs:
+  test-docker-image:
+    runs-on: ubuntu-latest
+    container: francescoslongo/collaborative_science
+
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v3
+      - name: Check that we have vim installed
+        run: test -f /bin/vim && echo "Vim is installed correctly"
+      - name: Check that numpy is install
+        run: python3 -c "import numpy" && echo "Numpy is downloaded"
+      - name: Check if matplotlib work
+        run: python3 -c "import matplotlib" &&  echo "Matplotlib is downloaded" 
+      - name: Check if MDAnalysis work
+        run: python3 -c "import MDAnalysis" &&  echo "MDAnalysis is downloaded" 
+      - name: Run tests in tests/FrancescoSlongo directory
+        run: |
+          cd tests/FrancescoSlongo
+          python3 hello_world.py
