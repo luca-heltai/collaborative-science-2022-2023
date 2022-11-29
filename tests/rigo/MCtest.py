@@ -331,7 +331,7 @@ print("MC states initialized. Performing MC walk...")
 twlk_i = time.time()
 
 key, acc, ni_stored = metropolis.walk(key, params, ni_o)
-if ni_stored.shape = (nav, nwalk, nstates):
+if ni_stored.shape == (nav, nwalk, nstates):
     print("Stored states matrix has the right dimension.")
 else:
     raise Exception("Stored states matrix doesn't have the right dimension.")
