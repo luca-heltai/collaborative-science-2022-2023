@@ -1,0 +1,26 @@
+name: Actions on Rigo
+on: [push]
+jobs:
+  test-docker-image:
+    runs-on: ubuntu-latest
+    container: ghcr.io/maurorigo/jaxubuntu:latest
+
+    steps:
+     - name: Checkout the repo
+       uses: actions/checkout@v3
+     - name: Test for vim
+       run: test -f /bin/vim && echo "Vim is installed."
+     - name: Test for python
+       run: python3 --version
+     - name: Test for numpy
+       run: python3 -c "import numpy" && echo "numpy is installed."
+     - name: Test for jax
+       run: python3 -c "import jax" && echo "jax is installed."
+     - name: Run short test in tests/rigo directory
+       run: |
+          cd tests/rigo
+          python3 test.py
+     - name: Run long test in tests/rigo directory
+       run: |
+          cd tests/rigo
+          python3 MCtest.py
