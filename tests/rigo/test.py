@@ -12,4 +12,5 @@ print(f"Permuted with numpy: {arrnp}.")
 key = jax.random.PRNGKey(13)
 arrjnp = jax.random.permutation(key, arr)
 assert len(arrjnp) == 10, "Something is wrong with the jax installation."
+print("Jax installation does not have issues")
 print(f"Permuted with jax: {arrjnp}.")
