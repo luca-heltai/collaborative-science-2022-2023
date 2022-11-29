@@ -332,7 +332,7 @@ twlk_i = time.time()
 
 key, acc, ni_stored = metropolis.walk(key, params, ni_o)
 ni_stored.block_until_ready()
-if ni_stored.shape[0] == nav and ni_stored.shape[1] == nwalk and ni_stored.shape[2] == nstates:
+if ni_stored.shape[0] == nav+nac and ni_stored.shape[1] == nwalk and ni_stored.shape[2] == nstates:
     print("Stored states matrix has the right dimension.")
     print(f"{ni_stored.shape[0]}, {ni_stored.shape[1]}, {ni_stored.shape[2]} vs {nav+nac}, {nwalk}, {nstates}.")
 else:
