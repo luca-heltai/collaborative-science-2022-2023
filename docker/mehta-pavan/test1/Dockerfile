@@ -4,7 +4,7 @@ RUN apt-get update
 
 CMD apt install g++ -y
 
-CMD gcc -o test_cpp.cpp a.out
+CMD g++ test_cpp.cpp
 
-RUN ./a.out
+CMD ./*.out
 
