@@ -6,4 +6,6 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - run: echo "buidling docker"
-      - run: ../docker/mehta-pavan/test1/docker build .
+      - run: pwd
+      - run: cd ../docker/mehta-pavan/test1/. 
+      - run: docker build .
