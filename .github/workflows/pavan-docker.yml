@@ -7,5 +7,5 @@ jobs:
     steps:
       - run: echo "buidling docker"
       - run: pwd
-      - run: cd ../../docker/mehta-pavan/test1/. 
+      - run: cd ./docker/mehta-pavan/test1/. 
       - run: docker build .
