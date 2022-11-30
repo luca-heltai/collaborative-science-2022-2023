@@ -1,0 +1,16 @@
+name: Actions on gabelli
+on: [push]
+jobs:
+  test-docker-image:
+    runs-on: ubuntu-latest
+    container: gabelli/university-timetable
+
+    steps:
+     - name: Check out repository
+       uses: actions/checkout@v3
+     - name: Check that we have vim installed
+       run: test -f /bin/vim && echo "Vim is installed"
+     - name: Run tests in tests/gabelli directory
+       run: |
+          cd tests/gabelli
+          pytest
