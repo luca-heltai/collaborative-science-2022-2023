@@ -1,11 +1,11 @@
 name: GitHub Actions for Docker
 run-name: ${{ github.actor }} is testing out GitHub Actions for buiilding docker
-on: [pull]
+on: [push]
 jobs:
   Run-Docker-via-Github-Actions:
     runs-on: ubuntu-latest
     steps:
       - run: echo "buidling docker"
       - run: pwd
-      - run: cd ../docker/mehta-pavan/test1/. 
+      - run: cd ../../docker/mehta-pavan/test1/. 
       - run: docker build .
