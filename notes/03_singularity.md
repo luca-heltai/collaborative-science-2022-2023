@@ -1,6 +1,7 @@
 Singularity and Docker
 ======================
 
+
 Singularity can be used with Docker images. This feature was included because
 developers use and really like using Docker and scientists have already
 put much resources into creating Docker images. Thus, one of our early goals was to support Docker. What can you do?
@@ -37,7 +38,7 @@ Import a Docker image into a Singularity Image
 ----------------------------------------------
 
 The core of a Docker image is basically a compressed set of files, a set of
-``.tar.gz`` that (if you look in your `Docker image folder
+`.tar.gz` that (if you look in your `Docker image folder
 <http://stackoverflow.com/questions/19234831/where-are-docker-images-stored-on-the-host-machine>`_
 on your host machine, you will see the files. The Docker Registry, which you
 probably interact with via `Docker Hub <https://hub.docker.com/>`_, serves these
@@ -104,7 +105,7 @@ Just like Docker has the Dockerfile, Singularity has a file called
 Singularity that (currently) applications like Singularity Hub know to
 find. For reproducibility of your containers, our strong
 recommendation is that you build from these files. Any command that you
-issue to change a container sandbox (building with ``--sandbox`` ) or to a build with ``--writable``
+issue to change a container sandbox (building with `--sandbox` ) or to a build with `--writable`
 is by default not recorded, and your container loses its
 reproducibility. The following are steps to these files. First,
 let's look at the absolute minimum requirement:
@@ -129,7 +130,7 @@ A particular tag or version can be added to the docker uri:
 
 
 
-Note that the default is ``latest`` . If you want to customize the Registry or
+Note that the default is `latest` . If you want to customize the Registry or
 Namespace, just add those to the header:
 
     Bootstrap: docker
@@ -182,9 +183,9 @@ customizing the environment. Here is a full Singularity file:
     AUTHOR Vanessasaur
 
 
-In the example above, I am overriding any Dockerfile ``ENTRYPOINT`` or ``CMD`` because I have
-defined a ``%runscript`` . If I want the Dockerfile ``ENTRYPOINT`` to take preference, I would remove
-the ``%runscript`` section. If I want to use ``CMD`` instead of ``ENTRYPOINT`` , I would again remove the
+In the example above, I am overriding any Dockerfile `ENTRYPOINT` or `CMD` because I have
+defined a `%runscript` . If I want the Dockerfile `ENTRYPOINT` to take preference, I would remove
+the `%runscript` section. If I want to use `CMD` instead of `ENTRYPOINT` , I would again remove the
 runscript, and add IncludeCmd to the header:
 
     Bootstrap: docker
@@ -205,43 +206,43 @@ You can commit this Singularity file to a GitHub repo.
 How does the runscript work?
 ----------------------------
 
-Docker has two commands in the ``Dockerfile`` that have something to do with
-execution, ``CMD`` and ``ENTRYPOINT``. The differences are subtle, but the a
+Docker has two commands in the `Dockerfile` that have something to do with
+execution, `CMD` and `ENTRYPOINT`. The differences are subtle, but the a
 good description is the following:
 
-    A ``CMD`` is to provide defaults for an executing container.
+    A `CMD` is to provide defaults for an executing container.
 
 and
 
-    An ``ENTRYPOINT`` helps you to configure a container that you can run as an
+    An `ENTRYPOINT` helps you to configure a container that you can run as an
     executable.
 
-Given the definition, the ``ENTRYPOINT`` is most appropriate for the Singularity
-``%runscript`` , and so using the default bootstrap (whether from a
-``docker://`` endpoint or a ``Singularity`` spec file) will set the
-``ENTRYPOINT`` variable as the runscript. You can change this behavior by
-specifying ``IncludeCmd: yes`` in the Spec file (see below). If you provide any
-sort of ``%runscript`` in your Spec file, this overrides anything provided in
+Given the definition, the `ENTRYPOINT` is most appropriate for the Singularity
+`%runscript` , and so using the default bootstrap (whether from a
+`docker://` endpoint or a `Singularity` spec file) will set the
+`ENTRYPOINT` variable as the runscript. You can change this behavior by
+specifying `IncludeCmd: yes` in the Spec file (see below). If you provide any
+sort of `%runscript` in your Spec file, this overrides anything provided in
 Docker. In summary, the order of operations is as follows:
 
-- If a ``%runscript`` is specified in the Singularity spec file, this takes
+- If a `%runscript` is specified in the Singularity spec file, this takes
    prevalence over all
 
-- If no ``%runscript`` is specified, or if the ``import`` command is used as in
-   the example above, the ``ENTRYPOINT`` is used as runscript.
+- If no `%runscript` is specified, or if the `import` command is used as in
+   the example above, the `ENTRYPOINT` is used as runscript.
 
-- If no ``%runscript`` is specified, but the user has a ``Singularity`` spec
-   with ``IncludeCmd`` , then the Docker ``CMD`` is used.
+- If no `%runscript` is specified, but the user has a `Singularity` spec
+   with `IncludeCmd` , then the Docker `CMD` is used.
 
-- If no ``%runscript`` is specified, and there is no ``CMD`` or ``ENTRYPOINT``
+- If no `%runscript` is specified, and there is no `CMD` or `ENTRYPOINT`
    , the image's default execution action is to run the bash shell.
 
 How do I specify my Docker image?
 ---------------------------------
 
 In the example above, you probably saw that we referenced the docker
-image first with the uri ``docker://`` and that is important to tell Singularity that
-it will be pulling Docker layers. To ask for ubuntu, we asked for ``docker://ubuntu`` . This
+image first with the uri `docker://` and that is important to tell Singularity that
+it will be pulling Docker layers. To ask for ubuntu, we asked for `docker://ubuntu` . This
 uri that we give to Singularity is going to be very important to choose
 the following Docker metadata items:
 
@@ -285,11 +286,11 @@ Custom Authentication
 ---------------------
 
 For both import and build using a build spec file, by default we use
-the Docker Registry ``index.docker.io`` . Singularity first tries the call without a
+the Docker Registry `index.docker.io` . Singularity first tries the call without a
 token, and then asks for one with pull permissions if the request is
 defined. However, it may be the case that you want to provide a custom
 token for a private registry. You have two options. You can either
-provide a ``Username`` and ``Password`` in the build specification file (if stored locally and
+provide a `Username` and `Password` in the build specification file (if stored locally and
 there is no need to share), or (in the case of doing an import or
 needing to secure the credentials) you can export these variables to
 environmental variables. We provide instructions for each of these
@@ -299,7 +300,7 @@ Authentication in the Singularity Build File
 ============================================
 
 You can simply specify your additional authentication parameters in the
-header with the labels ``Username`` and ``Password`` :
+header with the labels `Username` and `Password` :
 
     Username: vanessa
 
@@ -307,7 +308,7 @@ header with the labels ``Username`` and ``Password`` :
 
 
 Again, this can be in addition to specification of a custom registry
-with the ``Registry`` parameter.
+with the `Registry` parameter.
 
 Authentication in the Environment
 =================================
@@ -322,13 +323,13 @@ Testing Authentication
 ======================
 
 If you are having trouble, you can test your token by obtaining it on
-the command line and putting it into an environmental variable, ``CREDENTIAL`` :
+the command line and putting it into an environmental variable, `CREDENTIAL` :
 
     CREDENTIAL=$(echo -n vanessa:[password] | base64)
 
     TOKEN=$(http 'https://auth.docker.io/token?service=registry.docker.io&scope=repository:vanessa/code-samples:pull' Authorization:"Basic $CREDENTIAL" | jq -r '.token')
 
-This should place the token in the environmental variable ``TOKEN`` . To test that
+This should place the token in the environmental variable `TOKEN` . To test that
 your token is valid, you can do the following
 
     http https://index.docker.io/v2/vanessa/code-samples/tags/list Authorization:"Bearer $TOKEN"
@@ -349,12 +350,12 @@ us know <https://github.com/sylabs/singularity/issues>`_.
 =======================
 
 When using Docker, you typically run as root, meaning that root's home at
-``/root`` is where things will install given a specification of home. This
-situation is fine when you stay in Docker, or if the content at ``/root``
+`/root` is where things will install given a specification of home. This
+situation is fine when you stay in Docker, or if the content at `/root`
 doesn't need any kind of write access, but generally it can lead to a lot of
 bugs because it is, after all, root's home. This leads us to best practice #1.
 
-Don't install anything to root's home, ``/root``.
+Don't install anything to root's home, `/root`.
 
 2. Library Configurations
 =========================
@@ -377,5 +378,14 @@ home being automatically mounted to `$HOME`, and `$TMP` also mounted. Thus, give
 the potential for some kind of conflict or missing files, for best
 practice #3 we suggest the following:
 
-Don't put container valuables in ``$TMP`` or ``$HOME``
+Don't put container valuables in `$TMP` or `$HOME`
 
+
+Singularity on MAC
+==================
+
+In order to use singularity on a mac, you can do the following:
+
+alias singularity="docker run -ti --rm --privileged -v ~/.singularity:/root/.singularity -v /Users/heltai:/root/ quay.io/singularity/singularity:v3.8.4"
+
+This will use docker image.
