@@ -1,0 +1,332 @@
+[33mcommit 433f54c250342501532db44d502b0ceba31ed75f[m[33m ([m[1;36mHEAD -> [m[1;32mmain[m[33m, [m[1;31morigin/main[m[33m, [m[1;31morigin/HEAD[m[33m)[m
+Author: Gibbs Nwemadji <78448523+Gibbssins@users.noreply.github.com>
+Date:   Mon Mar 27 07:19:26 2023 +0000
+
+    I am adding a file which I just create
+
+[33mcommit 7fdeb23759cc45f4101e9401ddf73deb17aaf223[m
+Merge: 1608572 cc1a877
+Author: Gibbs Nwemadji <78448523+Gibbssins@users.noreply.github.com>
+Date:   Tue Jan 3 11:08:40 2023 +0000
+
+    Merge branch 'luca-heltai:main' into main
+
+[33mcommit cc1a8779b985abcc393282e3afc16353cfb5334f[m
+Author: Luca Heltai <luca.heltai@sissa.it>
+Date:   Wed Nov 30 11:37:12 2022 +0100
+
+    Added alias.
+
+[33mcommit 7b4e4adfbd44cc3ba177a444838b1e8cb2f3e741[m
+Author: Luca Heltai <luca.heltai@sissa.it>
+Date:   Wed Nov 30 11:07:46 2022 +0100
+
+    Singularity
+
+[33mcommit 16085726174722851bd8f9dfe12ff70150e278df[m
+Author: Gibbs Nwemadji <78448523+Gibbssins@users.noreply.github.com>
+Date:   Mon Nov 14 14:19:03 2022 +0000
+
+    Upload my docker image
+
+[33mcommit 59efac744c6b02c76526de4400daf44afb8826b5[m
+Author: Gibbs Nwemadji <78448523+Gibbssins@users.noreply.github.com>
+Date:   Thu Nov 17 07:37:30 2022 +0000
+
+    added
+
+[33mcommit e8013e524baf5a72d0277721f01724a7c1a1ca63[m
+Author: Gibbs Nwemadji <78448523+Gibbssins@users.noreply.github.com>
+Date:   Thu Nov 17 07:36:49 2022 +0000
+
+    trials
+
+[33mcommit cde92409483ce6ba32d628c6f8f7312162efa458[m
+Author: Gibbs Nwemadji <78448523+Gibbssins@users.noreply.github.com>
+Date:   Thu Nov 17 05:25:15 2022 +0000
+
+    Delete gibbs.yml
+
+[33mcommit aa4ceff79b84b4cfc0969f3df3d9aafc54de9360[m
+Author: Gibbs Nwemadji <78448523+Gibbssins@users.noreply.github.com>
+Date:   Thu Nov 17 05:24:41 2022 +0000
+
+    Delete tests/gibbs directory
+
+[33mcommit 248c7c7756b3c5a0ef52d5bff3b9da47eddc0021[m
+Author: Gibbs Nwemadji <78448523+Gibbssins@users.noreply.github.com>
+Date:   Wed Nov 16 17:08:29 2022 +0000
+
+    added yaml file
+
+[33mcommit ab56ae4824c6bbb23b81636b1b95b7da5df893a0[m
+Author: Gibbs Nwemadji <78448523+Gibbssins@users.noreply.github.com>
+Date:   Wed Nov 16 17:06:47 2022 +0000
+
+    aaded all recent file
+
+[33mcommit 678a43aa2244915388ed6bb48b2ab5bff3307078[m
+Author: Gibbs Nwemadji <78448523+Gibbssins@users.noreply.github.com>
+Date:   Wed Nov 16 18:29:00 2022 +0000
+
+    Delete dockerfile.
+
+[33mcommit f4f37862e718cc1353a2e5f129016cf0f43e7c03[m
+Author: Gibbs Nwemadji <78448523+Gibbssins@users.noreply.github.com>
+Date:   Wed Nov 16 18:27:47 2022 +0000
+
+    Delete docker/gibbs directory
+
+[33mcommit 71d4ca94357c17d794b7660186aecc1183cbc367[m
+Author: Gibbs Nwemadji <78448523+Gibbssins@users.noreply.github.com>
+Date:   Tue Nov 15 09:09:11 2022 +0000
+
+    new file
+
+[33mcommit 073fbacc081aaec38c5ea28ef88aa20c9fe5b33b[m
+Author: Gibbs Nwemadji <78448523+Gibbssins@users.noreply.github.com>
+Date:   Tue Nov 15 03:05:48 2022 +0000
+
+    Add files
+
+[33mcommit 9f6a82c54c6afd1c8b6c1e7c4fa74e610c645eca[m
+Merge: d2299be f2f2671
+Author: Luca Heltai <luca.heltai@sissa.it>
+Date:   Wed Nov 16 18:59:47 2022 +0100
+
+    Merge branch 'collaborators'
+
+[33mcommit f2f267118213c23fb2f3b45c0c92b80e77c47801[m
+Author: Luca Heltai <luca.heltai@sissa.it>
+Date:   Wed Nov 16 18:51:38 2022 +0100
+
+    mehta-pavan
+
+[33mcommit 32759434e97ce472aa8d5cbe48a4200230f4eb77[m
+Author: Luca Heltai <luca.heltai@sissa.it>
+Date:   Wed Nov 16 18:49:44 2022 +0100
+
+    Gibbssins
+
+[33mcommit 157291896a1e971561d9a1fc0c6a15ce659bbebf[m
+Author: Luca Heltai <luca.heltai@sissa.it>
+Date:   Wed Nov 16 18:49:20 2022 +0100
+
+    gabelli
+
+[33mcommit d2299be5e069589f92af8bb2fee9996d925cbc1d[m
+Author: Luca Heltai <luca.heltai@sissa.it>
+Date:   Wed Nov 16 10:31:46 2022 +0100
+
+    Make sure we test.
+
+[33mcommit 963dc645e31b108d01774de5b08cac2dd4572010[m
+Author: Luca Heltai <luca.heltai@sissa.it>
+Date:   Wed Nov 16 10:30:37 2022 +0100
+
+    Added interpolation and its test.
+
+[33mcommit f06c8222a5841c1a20f00defb42f99c90c558743[m
+Author: Luca Heltai <luca.heltai@sissa.it>
+Date:   Wed Nov 16 10:08:09 2022 +0100
+
+    image -> container.
+
+[33mcommit 1c2149ef98b0d772979bf40de2acf9c5f99d0010[m
+Author: Luca Heltai <luca.heltai@sissa.it>
+Date:   Wed Nov 16 10:07:14 2022 +0100
+
+    Make sure we use docker image.
+
+[33mcommit b806892258396127813352bdda8a070d942316ae[m
+Author: Luca Heltai <luca.heltai@sissa.it>
+Date:   Wed Nov 16 10:06:33 2022 +0100
+
+    Make sure we use docker image.
+
+[33mcommit 5b5396cc3cebf6fb442999fb94d55b55440a2382[m
+Author: Luca Heltai <luca.heltai@sissa.it>
+Date:   Wed Nov 16 09:56:15 2022 +0100
+
+    fixed heltai.yml maybe
+
+[33mcommit ef240e7485ab4ff28667be96912448da7ac297e3[m
+Author: Luca Heltai <luca.heltai@sissa.it>
+Date:   Wed Nov 16 09:54:48 2022 +0100
+
+    simplify
+
+[33mcommit 7d743f352ce268bc1b5a01057a6593e2dc034abf[m
+Author: Luca Heltai <luca.heltai@sissa.it>
+Date:   Wed Nov 16 09:50:45 2022 +0100
+
+    Fixed typo.
+
+[33mcommit 4736ba5327d5eca492629cbe033d4a994976610e[m
+Author: Luca Heltai <luca.heltai@sissa.it>
+Date:   Wed Nov 16 09:48:00 2022 +0100
+
+    Create heltai.yml
+
+[33mcommit 983e19e708769ca31ff4f96f73d20ab6858f037f[m
+Merge: fb9a4e7 813e4d3
+Author: Luca Heltai <luca.heltai@sissa.it>
+Date:   Wed Nov 16 09:36:42 2022 +0100
+
+    Merge pull request #16 from gabelli/main
+    
+    Add my Dockerfile
+
+[33mcommit 813e4d3e65618900cfdfb888a90272271bb45309[m
+Author: Giorgio Abelli <giorgio.abelli99@gmail.com>
+Date:   Tue Nov 15 16:31:11 2022 +0100
+
+    Remove outdated file
+
+[33mcommit c8f5b937b6281a97a4aa55bb7b93b901ac69028f[m
+Author: Giorgio Abelli <giorgio.abelli99@gmail.com>
+Date:   Tue Nov 15 16:27:52 2022 +0100
+
+    Add my Dockerfile
+
+[33mcommit 9ec3ebf58892b01ca0a6ac21f148a44961060d74[m
+Merge: 27f28c3 fb9a4e7
+Author: Giorgio Abelli <giorgio.abelli99@gmail.com>
+Date:   Tue Nov 15 16:24:25 2022 +0100
+
+    Merge branch 'main' of github.com:luca-heltai/collaborative-science-2022-2023
+
+[33mcommit 27f28c352fb4ffe195d6572008e4c454a81defd2[m
+Author: Giorgio Abelli <giorgio.abelli99@gmail.com>
+Date:   Mon Nov 14 11:39:36 2022 +0100
+
+    Add docker folder
+
+[33mcommit 7987b23d5137262a01bd503ee3c7f0ffc99ff9a8[m
+Author: Giorgio Abelli <giorgio.abelli99@gmail.com>
+Date:   Mon Nov 14 09:40:04 2022 +0100
+
+    Add dockerfile
+
+[33mcommit fb9a4e737a957d308664e9b6331f78bc001de3ae[m
+Author: Luca Heltai <luca.heltai@sissa.it>
+Date:   Wed Nov 9 12:59:46 2022 +0100
+
+    Minimal docker instructions.
+
+[33mcommit 79f7af94065b01f61860c9a918ffcb6b2f244a11[m
+Author: Luca Heltai <luca.heltai@sissa.it>
+Date:   Wed Nov 9 12:40:42 2022 +0100
+
+    Added Heltai docker image.
+
+[33mcommit 8f596a3b7af3a762e1a3baa466efe79737fe1a29[m
+Author: Luca Heltai <luca.heltai@sissa.it>
+Date:   Wed Nov 9 11:10:37 2022 +0100
+
+    Added lecture 4.
+
+[33mcommit 68b0526b5c606a87998bce7b260052652f910976[m
+Author: satvik-m97 <satvik.mishra@rwth-aachen.de>
+Date:   Wed Oct 19 15:56:14 2022 +0530
+
+    added collaborator
+
+[33mcommit 0e7c1f36111d376ee98994761e98e6cb1e6fa3fb[m
+Merge: 3868997 6e004c6
+Author: Luca Heltai <luca.heltai@sissa.it>
+Date:   Wed Oct 26 12:17:19 2022 +0200
+
+    Merge pull request #3 from maurorigo/collaborators
+    
+    Added collaborators list
+
+[33mcommit 6e004c69af86e41dd71fded8892d21dbce0ee9e3[m
+Author: WhO.opie <maurat24a5@gmail.com>
+Date:   Wed Oct 19 12:17:46 2022 +0200
+
+    Added maurorigo to collaborators list
+
+[33mcommit 3868997f75f2cc4448595b78bae05cd18c753bea[m
+Author: Sara <Sarabyfolk@gmail.com>
+Date:   Wed Oct 19 12:22:15 2022 +0200
+
+    Adding sara folchini name
+
+[33mcommit 8a7ebc4b5760e7709b3b6b313fb0d1b8eb554c8c[m
+Author: fcaretti <federico.caretti@protonmail.com>
+Date:   Wed Oct 19 12:35:40 2022 +0200
+
+    Added Federico Caretti's account
+
+[33mcommit ac51158530e8bb80be82f9eb6254254b70210c83[m
+Author: Roberto Marchello <roby.mark97@gmail.com>
+Date:   Wed Oct 19 12:27:36 2022 +0200
+
+    Added robymark97
+
+[33mcommit 19f35ca5ab29fc7381814a65a23c38f151a5fd9a[m
+Author: Luca Heltai <luca.heltai@sissa.it>
+Date:   Wed Oct 19 12:11:35 2022 +0200
+
+    Added file with active forks.
+
+[33mcommit 4354379f5e7a05698c6f3ee5ca401585128cf7e4[m
+Author: Luca Heltai <luca.heltai@sissa.it>
+Date:   Wed Oct 19 13:16:07 2022 +0200
+
+    Added add_remotes.sh
+
+[33mcommit 2450484196ab65d5c3fa17fbcefcf22267fbe8fd[m
+Author: Luca Heltai <luca.heltai@sissa.it>
+Date:   Wed Oct 19 11:35:23 2022 +0200
+
+    Fixed typo.
+
+[33mcommit 4bdb28624f7de8db3ee05ee292f454540985b201[m
+Author: Luca Heltai <luca.heltai@sissa.it>
+Date:   Wed Oct 19 11:20:44 2022 +0200
+
+    Added lecture 2.
+
+[33mcommit 265c6c0da16572ee1960a81fa922cbc331ee05fa[m
+Author: Luca Heltai <luca.heltai@sissa.it>
+Date:   Thu Oct 13 10:42:38 2022 +0200
+
+    Added slides and exercesise for Lecture 1.
+
+[33mcommit b6b0861d57ebc23508e701b1c5ef5aa738cab2b9[m
+Author: Luca Heltai <luca.heltai@sissa.it>
+Date:   Wed Oct 12 11:01:06 2022 +0200
+
+    Zoom link.
+
+[33mcommit 7a5ad3cad688957af02234866fd3ac63eaeb22b8[m
+Author: Luca Heltai <luca.heltai@sissa.it>
+Date:   Wed Oct 12 10:33:40 2022 +0200
+
+    Path.
+
+[33mcommit a27b0b269727eced7130cbbb559f55e93231034f[m
+Author: Luca Heltai <luca.heltai@sissa.it>
+Date:   Wed Oct 12 10:32:57 2022 +0200
+
+    More typos.
+
+[33mcommit 59c120693bff26500eb105649017b87605e195a4[m
+Author: Luca Heltai <luca.heltai@sissa.it>
+Date:   Wed Oct 12 10:32:18 2022 +0200
+
+    Updated course infor.
+
+[33mcommit 2f6a22bfe833d181198fb514904f0cebf0d46871[m
+Author: Luca Heltai <luca.heltai@sissa.it>
+Date:   Wed Oct 12 10:30:34 2022 +0200
+
+    Initial commit
+
+[33mcommit 52eeafbd755ca0f5898d9465d64042e3f01997b0[m
+Author: Luca Heltai <luca.heltai@sissa.it>
+Date:   Wed Oct 12 10:14:36 2022 +0200
+
+    Initial commit
